@@ -4,6 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.BookApppintmentActivity">
+    android:padding="16dp"
+    tools:context=".ui.BookAppointmentActivity">
+
+    <Spinner
+        android:id="@+id/spnDoctor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/support_simple_spinner_dropdown_item"
+        android:background="#C2FFBA"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Spinner
+        android:id="@+id/spnPatient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/support_simple_spinner_dropdown_item"
+        android:background="#C2FFBA"
+        app:layout_constraintTop_toBottomOf="@+id/spnDoctor"
+        android:layout_marginTop="16dp"
+        />
+    <LinearLayout
+        android:id="@+id/lnrButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@+id/spnPatient"
+        android:layout_marginTop="16dp">
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Choose Time"/>
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:text="Choose Date"/>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnBookAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Book Appointment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lnrButtons"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

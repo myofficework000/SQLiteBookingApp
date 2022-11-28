@@ -12,8 +12,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        setupEvents()
         addDoctor()
+    }
+
+    private fun setupEvents() {
+        binding.buttonAddAppointment.setOnClickListener {
+            startActivity(Intent(this,BookAppointmentActivity::class.java))
+        }
     }
 
     private fun addDoctor() {
