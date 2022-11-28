@@ -13,28 +13,28 @@
         android:theme="@style/Theme.AppointmentBookingApp"
         tools:targetApi="31">
         <activity
-            android:name=".FetchAllAppointmentsActivity"
+            android:name=".ui.FetchAllAppointmentsActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".BookApppintmentActivity"
+            android:name=".ui.BookApppintmentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".DoctorActivity"
+            android:name=".ui.DoctorActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PatientActivity"
+            android:name=".ui.PatientActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
