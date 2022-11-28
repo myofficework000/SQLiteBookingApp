@@ -20,7 +20,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.BookApppintmentActivity"
+            android:name=".ui.BookAppointmentActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
